@@ -1,6 +1,6 @@
 import * as S from './styles';
 import HeaderApp from '../../componentes/header/Header'
-import BodyApp from '../../componentes/body/Body'
+import BodyCheckout from '../../componentes/body/Checkout/Body'
 import FooterApp from '../../componentes/footer/Footer'
 
 function Checkout() {
@@ -8,7 +8,7 @@ function Checkout() {
   return (
     <S.Body>
     <HeaderApp></HeaderApp>
-	<BodyApp page='Checkout'></BodyApp>
+	<BodyCheckout></BodyCheckout>
 	<FooterApp></FooterApp>
     </S.Body>
   )

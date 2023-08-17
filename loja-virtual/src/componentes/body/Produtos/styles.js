@@ -43,5 +43,39 @@ span {
 	font-weight: 400;
 	line-height: normal;
 }
+`
 
+export const ContainerGames = styled.div`
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin-top: 40px;
+margin-left: 10px;
+width: 575px;
+height: 480px;
+overflow: auto;
+gap: 8px
+`
+
+export const ContainerButton = styled.div`
+display: flex;
+justify-content: end;
+margin-top: 20px;
+height: 55px;
+
+button
+{
+	width: 211px;
+	height: 43px;
+	margin-right: 17px;
+	border: 1px solid;
+	border-radius: 10px;
+	background-color: #6950A1;
+	color: #FFF;
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+}
 `
