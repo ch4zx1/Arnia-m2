@@ -1,3 +1,5 @@
+//Escreva uma função chamada calcularTotal que recebe esse array de produtos e retorna o valor total da compra, somando o preço de cada produto.
+
 const array = [
 	{ id: 1, nome: 'Camiseta', preco: 29.9 },
 	{ id: 2, nome: 'Calça', preco: 59.9 },

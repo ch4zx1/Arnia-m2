@@ -1,17 +1,18 @@
+/* eslint-disable react/prop-types */
 import * as S from './style'
 
-function Card()
+function Card({title, sub, desc, link, linkref, anotherlink, anotherref})
 {
 	return (
 		<S.Body>
 			<S.CardContainer>
 				<S.Card>
-					<span>Card title</span>
-					<p>Card Subtitle</p>
-					<p>Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+					<span>{title}</span>
+					<p>{sub}</p>
+					<p>{desc}</p>
 					<S.ContainerA>
-					<a href="/">Card link</a>
-					<a href="/">Another link</a>
+					<a href={linkref}>{link}</a>
+					<a href={anotherref}>{anotherlink}</a>
 					</S.ContainerA>
 				</S.Card>
 			</S.CardContainer>
