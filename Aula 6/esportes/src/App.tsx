@@ -28,7 +28,7 @@ const Noticias = [
 
 function App() {
 
-	const [pagina, setPagina] = useState(0);
+	const [pagina, setPagina] = useState<number>(0);
 
 	return(
 		<PaginaContext.Provider value={[pagina, setPagina]}>

@@ -1,3 +1,9 @@
-import { createContext } from "react";
+import { createContext, Dispatch, SetStateAction } from "react";
 
-export const PaginaContext = createContext(0);
+
+type Props = [
+	number,
+	Dispatch<SetStateAction<number>>
+]
+
+export const PaginaContext = createContext<Props>([0, () => 0]);

@@ -1,6 +1,18 @@
 import * as S from "./styles";
 
-function Noticia({ array }) {
+type Props = {
+	array: {
+		id: number,
+		img: string,
+		titulo: string,
+		descricao: string,
+		author: string,
+		data: string,
+		content: string,
+	}
+}
+
+function Noticia({ array }: Props) {
   return (
     <>
       <S.Body>

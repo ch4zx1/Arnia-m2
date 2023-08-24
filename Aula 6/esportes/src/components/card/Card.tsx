@@ -2,7 +2,14 @@ import { useContext } from "react";
 import * as S from "./styles";
 import { PaginaContext } from "../../context/CreateContext";
 
-function Card({ imagem, titulo, conteudo, id }) {
+type Props = {
+	imagem: string,
+	titulo: string,
+	conteudo: string,
+	id: number
+}
+
+function Card({ imagem, titulo, conteudo, id }: Props) {
   const [, setPagina] = useContext(PaginaContext);
 
   return (

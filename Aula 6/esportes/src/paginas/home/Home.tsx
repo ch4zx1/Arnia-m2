@@ -1,7 +1,19 @@
 import Card from "../../components/card/Card";
 import * as S from "./styles";
 
-function Home({ array }) {
+type Props = {
+	array: {
+		id: number,
+		img: string,
+		titulo: string,
+		descricao: string,
+		author: string,
+		data: string,
+		content: string,
+	}[]
+}
+
+function Home({ array }: Props) {
   return (
     <>
       <S.Body>
